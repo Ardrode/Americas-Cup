@@ -16,7 +16,7 @@ let barcaSelezionata;                       // selezionata nell'HTML
 /* Manda dati di spostamento */
 function sendData(direzione) {
 
-    fetch('http://localhost:3000/controlloBarche/' + barcaSelezionata, {
+    fetch('https://americas-cup.onrender.com/controlloBarche/' + barcaSelezionata, {
         // seleziono il tipo di metodo
         method: 'PUT',
         headers: {
@@ -35,7 +35,7 @@ function sendData(direzione) {
 /* Richiedi dati gameArea */
 function getGameArea(callback) {
 
-    fetch('http://localhost:3000/gameArea')
+    fetch('https://americas-cup.onrender.com/gameArea')
         .then(response => {return response.json();})                  
         .then(data => {
             // slava i dati di game area nella variabile golbale.
@@ -52,7 +52,7 @@ function getGameArea(callback) {
 /* Richiedi dati barche */
 function getDatiBarche(callback) {
 
-    fetch('http://localhost:3000/barche')
+    fetch('https://americas-cup.onrender.com/barche')
         .then(response => {return response.json();})                  
         .then(data => {
             // slava i dati di game area nella variabile golbale.

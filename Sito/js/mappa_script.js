@@ -14,7 +14,7 @@ let markersFreccia = [];                    // array in cui verranno salvati i m
 /* Richiedi dati gameArea */
 function getGameArea(callback) {
 
-    fetch('http://localhost:3000/gameArea')
+    fetch('https://americas-cup.onrender.com/gameArea')
         .then(response => {return response.json();})                  
         .then(data => {
             // slava i dati di game area nella variabile golbale.
@@ -31,7 +31,7 @@ function getGameArea(callback) {
 /* Richiedi dati barche */
 function getDatiBarche(callback) {
 
-    fetch('http://localhost:3000/barche')
+    fetch('https://americas-cup.onrender.com/barche')
         .then(response => {return response.json();})                  
         .then(data => {
             // slava i dati di game area nella variabile golbale.

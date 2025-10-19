@@ -37,7 +37,7 @@ setInterval(updateBarca, 1000);
 
 function sendNewData(barca, lat, len, direction) {
 
-    fetch('http://localhost:3000/controlloAutonomo', {
+    fetch('https://americas-cup.onrender.com/controlloAutonomo', {
             // seleziono il tipo di metodo
             method: 'PUT',
             headers: {
