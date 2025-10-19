@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title> Barche </title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="riga1">
+            <div class="mappa">
+                <a href="html/mappa.html">
+                    <div class="titolo">
+                        <h1> Mappa </h1>
+                    </div>
+
+                    <div id="map">
+
+                    </div>
+                </a>
+            </div>
+        
+            <div class="controlloBarche">
+                <h1> Controllo Barche </h1>
+                <a href="html/1.html">
+                    <div id="barca1" class="card-barca">
+                        Controlla barca 1
+                        <img src="Photo/barchetta_blu.png" alt="icon">
+                    </div>
+                </a>
+                <a href="html/2.html">
+                    <div id="barca2" class="card-barca">
+                        Controlla barca 2
+                        <img src="Photo/barchetta_verde.png" alt="icon">
+                    </div>
+                </a>
+                <a href="html/controlloAutonomo.html">
+                    <div id="controlloAutonomo" class="card-barca">
+                        Attiva il controllo automatico
+                        <img src="Photo/robot.png" alt="icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="riga2">
+            <div class="reset">
+                <button class="reset" onclick="reset()">
+                    Reset Barche
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/index_script.js"></script>
+    
+
+</body>
+</html>

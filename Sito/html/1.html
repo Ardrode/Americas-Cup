@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/ControlloBarche_style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title> Controllo Barca 1 </title>
+</head>
+<body>
+
+    <div class="cont">
+        <div id="map">
+
+        </div>
+
+        <button class="back" onclick="window.location.href='../index.html'">
+            <img src="../Photo/home.svg" alt="icon">
+        </button>
+
+        <div class="input card">
+            <h1>Barca 1</h1>
+
+            <div class="bottoni">
+                <div class="riga">
+                    <button onclick="sendData(315)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(-45deg)">
+                    </button>
+                    <button onclick="sendData(0)">
+                        <img src="../Photo/freccia_su.svg" alt="icon">
+                    </button>
+                    <button onclick="sendData(45)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(45deg)">
+                    </button>
+                </div>
+                <div class="riga">
+                    <button onclick="sendData(270)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(-90deg)">
+                    </button>
+                    <div class="fakeButton">
+
+                    </div>
+                    <button onclick="sendData(90)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(90deg)">
+                    </button>
+                </div>
+                <div class="riga">
+                    <button onclick="sendData(225)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(-135deg)">
+                    </button>
+                    <button onclick="sendData(180)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(180deg)">
+                    </button>
+                    <button onclick="sendData(135)">
+                        <img src="../Photo/freccia_su.svg" alt="icon" style="transform: rotate(135deg)">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../js/ControlloBarche_script.js"></script>
+
+    <script>
+        barcaSelezionata = 0;
+    </script>
+</body>
+</html>
